@@ -6,7 +6,7 @@ function Hide()
     document.getElementById("delete").style.visibility = "hidden";
     document.getElementById("about").style.visibility = "hidden";
 }
-function Create(str)
+function GetAll(str)
 {
     var getRequest;
     var url = "http://bus-pluto.ad.uab.edu/jsonwebservice/service1.svc/getAllCategories";
@@ -28,13 +28,13 @@ function Create(str)
         if (getRequest.readyState == 4 && getRequest.status == 200)
         {
             var output = JSON.parse(getRequest.responseText);
-            Generate(output);
+            ShowAll(output);
         }
     }
     getRequest.open("GET", url, true);
     getRequest.send();
 }
-function Generate(result)
+function ShowAll(result)
 {
     var count = 0;
     var display = "";
