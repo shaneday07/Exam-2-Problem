@@ -1,0 +1,60 @@
+body
+{
+       margin:50px 0px; padding:0px;
+       text-align: center;         
+}
+
+#center {
+     width:500px;
+	margin:0px auto;
+	text-align:center;
+	padding:15px;
+	border:1px dashed #333;
+}
+section.all {display: inline;
+                  display: none;
+                  color: white;
+                 }
+
+section.create {display: inline;
+                
+                  display: none;
+                  color: white;
+                 }
+
+section.update {display: inline;
+                  display: none;
+                  color: white;
+                 }
+
+section.delete {display: inline;
+                  display: none;
+                  color: white;
+                 }
+                 
+                 
+section.about
+{
+    display: inline;
+    display: none;
+    color: white;
+}
+#orderdisplay {background-color: #FFFFCC; }
+
+h1
+{
+    font-family: sans-serif;
+    color: white;
+}
+h2
+{
+    color: white;
+}
+
+body
+{
+    
+    width: 500px;
+    background: rgb(31, 92, 61);
+    
+}

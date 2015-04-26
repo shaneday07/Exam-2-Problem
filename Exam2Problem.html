@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+
+<html>
+<head>
+    <title>Exam 2 Problem</title>
+    <link rel="stylesheet" type="text/css" href="styles/Exam2Problem.css" />
+    <script src="js/Exam2Problem.js"></script>
+    
+</head>
+
+<body onload="Hide()">
+    <div id="center">
+    <section id="title">
+        <h1>Exam 2 Problem</h1>
+        
+        <br>
+        <select onchange="MenuChange()" id="menu">
+            <option>Please select an option...</option>
+            <option>Show All Categories</option>
+            <option>Create a Category</option>
+            <option>Update a Category Description</option>
+            <option>Delete a Category</option>
+            <option>About</option>
+        </select> 
+        <hr>
+    </section>
+    
+    <section id="all">
+        <button onclick="ShowAll()" id="showall">Show All Categories</button>
+        <br>
+        <hr>
+        <div id="alldisplay"></div>
+        <hr>
+    </section>
+    
+    <section id="create">
+        <hr>
+        <div id="catentry">Please Enter A Category Name:</div>
+        <input type="text" id="catname">
+        <hr>
+        <div id="catedescripentry">Please Enter A category Description:</div>
+        <input type="text" id="catdescrip">
+        <div id="createdisplay"></div>
+        <hr>
+        <button onclick="CreateCat()">Create a Category</button>
+        <hr>      
+    </section>
+    
+    <section id="update">
+        <div>Please enter a category ID:</div>
+        <input type="text" id="newcatid">
+        <div id="newcat">New Category Description:</div>
+        <input type="text" id="newcatdescrip">
+        <button onclick="UpdateCat()" id="updatebutton">Update a Category</button>
+        <div id="updateresult"></div>
+        <hr>
+    </section>
+   
+    <section id="delete">
+        <div id="deletelabel">Please input the Category to be deleted:</div>
+        <input type="text" id="deleteid">
+        <button onclick="DeleteCat()" id="deletebutton">Delete a Category</button>
+        <div id="deleteresult"></div>
+        <hr>
+    </section>
+    
+    <section id="result"></section>
+   
+    <section id="about">
+        <div>Shane Day</div>
+        <div>Birmingham, AL</div>
+        <div>Hobbies include palying guitar, reading books and comics, and taking my dog to the park.</div>   
+    </section>
+    </div>
+</body>
+</html>
